@@ -26,8 +26,9 @@ However, modern coding standards has been followed by taking inputs from chatGPT
 ```
 npm install
 npm run dev
-It will open in http://localhost:3000/
 ```
+
+It will open in `http://localhost:3000/`
 
 <!-- ## How to deploy
 
