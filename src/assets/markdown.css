@@ -1,0 +1,193 @@
+.markdown-content {
+    display: block;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.85;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+}
+
+/* ---------- Headings ---------- */
+
+.markdown-content h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    letter-spacing: -0.01em;
+}
+
+.markdown-content h2 {
+    font-size: 1.85rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: var(--button-bg);
+}
+
+.markdown-content h3 {
+    font-size: 1.45rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--button-bg);
+    opacity: 0.85;
+}
+
+/* ---------- Paragraphs ---------- */
+
+.markdown-content p {
+  margin-bottom: 1.25rem;
+  color: var(--text-color);
+}
+
+/* ---------- Horizontal rule ---------- */
+
+.markdown-content hr {
+    border: none;
+    border-top: 1px solid rgba(148, 163, 184, 0.25);
+    margin: 3rem 0;
+}
+
+/* ---------- TABLES (STRIPED, CALM) ---------- */
+
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+}
+
+.markdown-content thead {
+    background-color: var(--card-bg);
+}
+
+.markdown-content th,
+.markdown-content td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.markdown-content th {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.markdown-content td {
+    color: var(--text-color);
+}
+
+/* Light theme stripes */
+:root[data-theme="light"] .markdown-content tbody tr:nth-child(even) {
+    background-color: var(--color-white-light);
+}
+
+:root[data-theme="light"] .markdown-content thead {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme stripes */
+:root[data-theme="dark"] .markdown-content tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+:root[data-theme="dark"] .markdown-content tbody tr:nth-child(odd):hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.markdown-content tbody tr:hover {
+    background-color: rgba(148, 163, 184, 0.08);
+}
+
+/* ---------- Blockquotes (Sacred / Highlighted Insight) ---------- */
+
+.markdown-content blockquote {
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #fde68a; /* gold */
+    font-style: italic;
+    color: var(--text-color);
+}
+
+/* Emphasis inside quotes */
+.markdown-content blockquote em {
+    color: #5eead4; /* calm teal */
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Light theme enhancement */
+:root[data-theme="light"] .markdown-content blockquote em {
+  color: var(--text-color);
+}
+
+/* Dark theme enhancement */
+:root[data-theme="dark"] .markdown-content blockquote {
+  background-color: var(--button-text);
+}
+
+/* ---------- Lists ---------- */
+
+.markdown-content ul,
+.markdown-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.markdown-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Inline code ---------- */
+
+.markdown-content code {
+    background: rgba(0, 0, 0, 0.06);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+:root[data-theme="dark"] .markdown-content code {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Sanskrit (Devanāgarī) ---------- */
+
+.markdown-content [lang="sa"] {
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: 1.05em;
+    letter-spacing: 0.02em;
+    line-height: 1.9;
+    padding: 0.15em 0.4em;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Inline Sanskrit highlight */
+:root[data-theme="light"] .markdown-content [lang="sa"] {
+    background-color: #dcfce7; /* green-100 */
+    color: #14532d; /* green-900 */
+}
+
+:root[data-theme="dark"] .markdown-content [lang="sa"] {
+    background-color: rgba(20, 83, 45, 0.35);
+    color: #bbf7d0;
+}
+
+/* Sanskrit verses inside blockquotes */
+.markdown-content blockquote [lang="sa"] {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+    background: none;
+    padding: 0 0.5rem;
+    color: #fde68a; /* gold */
+}

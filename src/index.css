@@ -1,0 +1,108 @@
+:root {
+  /* Font & rendering */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Base colors */
+  --color-white: #ffffff;
+}
+
+/* ---------- LIGHT THEME ---------- */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  /* Backgrounds */
+  --bg-color: #f8fafc;        /* very light slate */
+  --card-bg: #ffffff;        /* true white cards */
+
+  /* Text */
+  --text-color: #0f172a;     /* slate-900 (ink-like) */
+
+  /* UI */
+  --border-color: #e2e8f0;   /* slate-200 */
+  --button-bg: #0f172a;
+  --button-text: #ffffff;
+}
+
+/* ---------- DARK THEME ---------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-color: #0f172a;      /* slate-900 */
+  --text-color: #e5e7eb;    /* gray-200 */
+  --card-bg: #020617;       /* slate-950 */
+  --border-color: #334155;  /* slate-700 */
+  --button-bg: #e5e7eb;
+  --button-text: #020617;
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- LINKS ---------- */
+a {
+  font-weight: 500;
+  color: #6366f1; /* indigo */
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  font-size: 3.2em;
+  color: var(--text-color);
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus-visible {
+  outline: 2px solid #6366f1;
+}
+
+/* ---------- SVG (Word Cloud) ---------- */
+.svg-container svg text {
+  cursor: pointer;
+}
+
+/* ---------- BACK BUTTON ---------- */
+.back-button {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
