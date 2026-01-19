@@ -28,7 +28,7 @@ export const WordDetail = () => {
         onClick={() => navigate("/")}
         className="back-button"
       >
-        ← Back to Home
+        ← Home
       </button>
 
       <div className="markdown-content">

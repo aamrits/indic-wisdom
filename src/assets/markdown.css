@@ -1,22 +1,70 @@
+/* ---------- THEME TOKENS ---------- */
+
+:root[data-theme="light"] {
+    --heading-color: var(--text-black);
+    --em-strong-color: var(--secondary-orange);
+    --table-bg: var(--bg-white);
+    --table-head-bg: var(--color-shadow-gray);
+    --table-stripe: var(--color-shadow-gray);
+    --table-hover: var(--color-shadow-deep-gray);
+    --blockquote-bg: var(--bg-white);
+    --blockquote-border: var(--secondary-orange);
+    --list-marker: var(--secondary-orange);
+    --sa-bg: var(--secondary-orange);
+    --sa-color: var(--color-white);
+    --iast-bg: var(--accent-teal);
+    --iast-color: var(--color-black);
+    --pill-bg: var(--secondary-orange);
+    --pill-color: var(--color-white);
+}
+
+:root[data-theme="dark"] {
+    --heading-color: var(--text-white);
+    --em-strong-color: var(--accent-teal);
+    --table-bg: var(--bg-black);
+    --table-head-bg: var(--color-shadow-gray);
+    --table-stripe: var(--color-shadow-gray);
+    --table-hover: var(--color-shadow-deep-gray);
+    --blockquote-bg: var(--bg-black);
+    --blockquote-border: var(--secondary-orange);
+    --list-marker: var(--color-list-orange);
+    --sa-bg: var(--color-highlight-deep-green);
+    --sa-color: var(--color-highlight-green);
+    --iast-bg: var(--color-highlight-deep-orange);
+    --iast-color: var(--color-white);
+    --pill-bg: var(--color-highlight-deep-green);
+    --pill-color: var(--color-highlight-green);
+}
+
+/* ---------- Base ---------- */
+
 .markdown-content {
     display: block;
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.85;
-    font-size: 1.05rem;
+    font-size: 1rem;
     letter-spacing: 0.01em;
-    color: var(--text-color);
 }
 
 /* ---------- Headings ---------- */
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+    color: var(--heading-color);
+}
+
+.markdown-content h1 {
+    color: var(--heading-color);
+}
 
 .markdown-content h1 {
     font-size: 2.6rem;
     font-weight: 700;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--heading-color);
     letter-spacing: -0.01em;
 }
 
@@ -25,7 +73,6 @@
     font-weight: 600;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    color: var(--button-bg);
 }
 
 .markdown-content h3 {
@@ -33,38 +80,45 @@
     font-weight: 500;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    color: var(--button-bg);
     opacity: 0.85;
 }
 
 /* ---------- Paragraphs ---------- */
 
 .markdown-content p {
-  margin-bottom: 1.25rem;
-  color: var(--text-color);
+    margin-bottom: 1.25rem;
+    color: var(--text-color);
+}
+
+.markdown-content em,
+.markdown-content strong {
+    color: var(--em-strong-color);
+    font-style: normal;
+}
+
+.markdown-content strong {
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 /* ---------- Horizontal rule ---------- */
 
 .markdown-content hr {
     border: none;
-    border-top: 1px solid rgba(148, 163, 184, 0.25);
+    border-top: 1px solid var(--color-gray);
     margin: 3rem 0;
 }
 
-/* ---------- TABLES (STRIPED, CALM) ---------- */
+/* ---------- TABLES (STRIPED) ---------- */
 
 .markdown-content table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    background: var(--table-bg);
     border: 1px solid var(--border-color);
-    background: var(--card-bg);
-}
-
-.markdown-content thead {
-    background-color: var(--card-bg);
+    box-shadow: 0px 5px 15px 0px var(--color-shadow-gray);
 }
 
 .markdown-content th,
@@ -73,37 +127,31 @@
     padding: 0.75rem 1rem;
     text-align: left;
     vertical-align: top;
+    color: var(--heading-color);
+}
+
+.markdown-content table thead {
+    background-color: var(--color-shadow-gray);
 }
 
 .markdown-content th {
     font-weight: 600;
-    color: var(--text-color);
 }
 
-.markdown-content td {
-    color: var(--text-color);
+.markdown-content tbody tr:nth-child(even) {
+    background-color: var(--table-stripe);
 }
 
-/* Light theme stripes */
-:root[data-theme="light"] .markdown-content tbody tr:nth-child(even) {
-    background-color: var(--color-white-light);
-}
-
-:root[data-theme="light"] .markdown-content thead {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Dark theme stripes */
 :root[data-theme="dark"] .markdown-content tbody tr:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-:root[data-theme="dark"] .markdown-content tbody tr:nth-child(odd):hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #0f172a;
 }
 
 .markdown-content tbody tr:hover {
-    background-color: rgba(148, 163, 184, 0.08);
+    background-color: var(--table-hover);
+}
+
+:root[data-theme="dark"] .markdown-content tbody tr:hover {
+    background-color: var(--table-hover);
 }
 
 /* ---------- Blockquotes (Sacred / Highlighted Insight) ---------- */
@@ -111,83 +159,102 @@
 .markdown-content blockquote {
     margin: 2.5rem 0;
     padding: 1.25rem 1.5rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #fde68a; /* gold */
-    font-style: italic;
+    background-color: var(--blockquote-bg);
+    font-style: normal;
     color: var(--text-color);
+    border-left: 4px solid var(--blockquote-border);
+    box-shadow: 0px 5px 15px 0px var(--color-shadow-gray);
 }
 
-/* Emphasis inside quotes */
 .markdown-content blockquote em {
-    color: #5eead4; /* calm teal */
+    color: var(--em-strong-color);
     font-style: normal;
     font-weight: 500;
-}
-
-/* Light theme enhancement */
-:root[data-theme="light"] .markdown-content blockquote em {
-  color: var(--text-color);
-}
-
-/* Dark theme enhancement */
-:root[data-theme="dark"] .markdown-content blockquote {
-  background-color: var(--button-text);
 }
 
 /* ---------- Lists ---------- */
 
 .markdown-content ul,
 .markdown-content ol {
-    padding-left: 1.5rem;
+    padding-left: 0;
     margin-bottom: 1.5rem;
+    list-style: none;
 }
 
 .markdown-content li {
     margin-bottom: 0.5rem;
 }
 
-/* ---------- Inline code ---------- */
-
-.markdown-content code {
-    background: rgba(0, 0, 0, 0.06);
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.95em;
+.markdown-content ul li {
+    position: relative;
+    padding-left: 2rem;
 }
 
-:root[data-theme="dark"] .markdown-content code {
-    background: rgba(255, 255, 255, 0.08);
+.markdown-content ul li::before {
+    content: "✨";
+    position: absolute;
+    left: 0;
+    color: var(--list-marker);
 }
 
-/* ---------- Sanskrit (Devanāgarī) ---------- */
+.markdown-content ol {
+    counter-reset: item;
+}
 
-.markdown-content [lang="sa"] {
-    font-family: "Noto Serif Devanagari", serif;
-    font-size: 1.05em;
+.markdown-content ol li::before {
+    counter-increment: item;
+    content: counter(item) ".";
+    color: var(--list-marker);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+/* ---------- IAST & Sanskrit styles ---------- */
+
+.markdown-content [lang="sa"],
+.markdown-content [lang="iast"] {
+    font-size: 1em;
     letter-spacing: 0.02em;
-    line-height: 1.9;
     padding: 0.15em 0.4em;
-    border-radius: 6px;
+    border-radius: 8px;
     display: inline-block;
 }
 
-/* Inline Sanskrit highlight */
-:root[data-theme="light"] .markdown-content [lang="sa"] {
-    background-color: #dcfce7; /* green-100 */
-    color: #14532d; /* green-900 */
+.markdown-content [lang="sa"] {
+    font-family: "Noto Serif Devanagari", serif;
+    background-color: var(--sa-bg);
+    color: var(--sa-color);
 }
 
-:root[data-theme="dark"] .markdown-content [lang="sa"] {
-    background-color: rgba(20, 83, 45, 0.35);
-    color: #bbf7d0;
+.markdown-content [lang="iast"] {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--iast-bg);
+    color: var(--iast-color);
 }
 
 /* Sanskrit verses inside blockquotes */
+
 .markdown-content blockquote [lang="sa"] {
     display: block;
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: 0.6rem;
     background: none;
     padding: 0 0.5rem;
-    color: #fde68a; /* gold */
+    color: var(--color-highlight-orange);
+}
+
+/* ---------- Pills ---------- */
+
+.markdown-content [pill="tag"] {
+    letter-spacing: 0.02em;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.5rem 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: var(--pill-bg);
+    color: var(--pill-color);
+}
+
+.markdown-content [pill="tag"]:first-child {
+    margin-left: 0;
 }

@@ -1,6 +1,114 @@
+@import url('./assets/default.css');
+
 #root {
   max-width: 1280px;
   margin: 4rem auto;
   padding: 0 2rem;
   text-align: center;
+}
+
+/* ---------- LIGHT THEME ---------- */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --primary-black: var(--color-light-white);
+  --secondary-orange: var(--color-deep-orange);
+  --accent-teal: var(--color-teal);
+
+  --bg-white: var(--color-white);
+  --bg-black: var(--color-black);
+  --text-white: var(--color-off-white);
+  --text-black: var(--color-black);
+
+  --border-color: var(--color-off-white);
+
+}
+
+/* ---------- DARK THEME ---------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --primary-black: var(--color-black);
+  --secondary-orange: var(--color-deep-orange);
+  --accent-teal: var(--color-teal);
+
+  --bg-white: var(--color-white);
+  --bg-black: var(--color-deep-black);
+  --text-white: var(--color-off-white);
+  --text-black: var(--color-black);
+
+  --border-color: var(--color-gray);
+
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--primary-black);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- LINKS ---------- */
+a {
+  font-weight: 500;
+  color: #6366f1;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  font-size: 3.2em;
+  color: var(--text-color);
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+:root[data-theme="light"] button {
+  background-color: var(--bg-black);
+  color: var(--bg-white);
+}
+
+:root[data-theme="dark"] button {
+  background-color: var(--bg-white);
+  color: var(--bg-black);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus-visible {
+  outline: 2px solid #6366f1;
+}
+
+/* ---------- SVG (Word Cloud) ---------- */
+.svg-container svg text {
+  cursor: pointer;
+}
+
+/* ---------- BACK BUTTON ---------- */
+.back-button {
+  position: fixed;
+  left: 10px;
+  top: 15px;
+  z-index: 99;
 }

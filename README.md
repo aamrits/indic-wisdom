@@ -6,7 +6,7 @@ There is an ever-lasting wisdom which is flowing from India and therefore it is 
 
 See it online: https://aamrits.github.io/ -->
 
-## Use this project is built
+## How this project is built
 
 Most of the codebase is built with the simple approach of "typing in google and do the monkey-see-monkey-do" kind of programming. 
 
@@ -19,7 +19,8 @@ However, modern coding standards has been followed by taking inputs from chatGPT
 - It uses React + Vite template for faster rendering.
 - It uses `react-d3-cloud` to build the word-cloud. 
 - For reading the `.md` files, libraries such as `react-markdown`, `remark-gfm`, `rehype-raw` are used.
-- The content was made largely based on self-reading of several Indian scriptures and texts, various relevant websites related to Indic texts. Help has been taken from AI to refine and organise content.
+- The content was written largely based on self-reading of several Indian scriptures and texts, various relevant websites related to Indic texts. 
+- Help has been taken from AI to refine and organise content.
 
 ## How to use
 

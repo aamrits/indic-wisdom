@@ -13,7 +13,7 @@ a sage whose wisdom was lived, not merely spoken.
 
 ---
 
-## Lineage and Identity
+## Lineage
 
 Vasiṣṭha is traditionally regarded as a **mānasa-putra**
 (mental son) of <span lang="sa">ब्रह्मा</span> (*Brahmā*).
