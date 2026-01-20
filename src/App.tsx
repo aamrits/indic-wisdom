@@ -21,8 +21,8 @@ function App() {
   return (
     <BrowserRouter>
       {/* Global Theme Toggle */}
-      <div style={{ position: "absolute", top: 16, right: 16 }}>
-        <button onClick={toggleTheme} aria-label="Toggle theme" style={{ position: "fixed", right: "10px", zIndex: "99" }}>
+      <div className="theme-toggle">
+        <button onClick={toggleTheme} aria-label="Toggle theme" className="theme-toggle-btn">
           {theme === "light" ? "🌙 Dark" : "☀️ Light"}
         </button>
       </div>

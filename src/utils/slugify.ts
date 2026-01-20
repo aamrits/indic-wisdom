@@ -1,4 +1,4 @@
-export const slugify = (input: unknown): string => {
+export const slugify = (input: string): string => {
     if (typeof input !== "string") return "";
 
     return input

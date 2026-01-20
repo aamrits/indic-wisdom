@@ -78,7 +78,7 @@ export const WordCloudComponent = ({ words, mode }: Props) => {
 
 
   return (
-    <div style={{ width: "900px", height: "450px" }} className="svg-container">
+    <div className="svg-container">
       <WordCloud
         width={1800}
         height={1000}

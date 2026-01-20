@@ -1,4 +1,4 @@
-import { FontScaleConfig, Word } from "../types";
+import { FontScaleConfig } from "../types";
 
 export const normalizeValue = (
   value: number,
@@ -44,4 +44,3 @@ export const calculateFontWeight = (
       adjusted * (config.maxWeight - config.minWeight)
   );
 };
-

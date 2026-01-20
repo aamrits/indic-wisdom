@@ -1,9 +1,10 @@
 @import url('./assets/default.css');
 
 #root {
+  width: 100%;
   max-width: 1280px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  padding: 1.5rem;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -11,7 +12,7 @@
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --primary-black: var(--color-light-white);
+  --primary-white: var(--color-off-white);
   --secondary-orange: var(--color-deep-orange);
   --accent-teal: var(--color-teal);
 
@@ -46,11 +47,19 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  align-items: flex-start;  /* top on mobile */
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--primary-black);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root[data-theme="light"] body {
+  background-color: var(--primary-white);
+}
+
+:root[data-theme="dark"] body {
+  background-color: var(--primary-black);
 }
 
 /* ---------- LINKS ---------- */
@@ -100,15 +109,90 @@ button:focus-visible {
   outline: 2px solid #6366f1;
 }
 
-/* ---------- SVG (Word Cloud) ---------- */
-.svg-container svg text {
-  cursor: pointer;
+.theme-toggle {
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 
-/* ---------- BACK BUTTON ---------- */
-.back-button {
+.theme-toggle-btn {
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+}
+
+.back-button-desktop {
   position: fixed;
   left: 10px;
   top: 15px;
   z-index: 99;
+}
+
+/* ---------- SVG (Word Cloud) ---------- */
+.svg-container {
+  width: 900px;
+  height: 450px;
+}
+
+.svg-container svg text {
+  cursor: pointer;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.back-button-desktop {
+  display: block;
+}
+
+.back-button-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #root {
+    margin-bottom: 3rem;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .theme-toggle {
+    display: none;
+  }
+
+  .back-button-desktop {
+    display: none;
+  }
+
+  .back-button-mobile {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    align-items: center;
+  }
+
+  #root {
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
 }
