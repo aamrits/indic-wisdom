@@ -132,6 +132,7 @@ button:focus-visible {
 .svg-container {
   width: 900px;
   height: 450px;
+  margin: 0 auto;
 }
 
 .svg-container svg text {

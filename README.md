@@ -1,6 +1,6 @@
 # Indic Wisdom.
 
-There is an ever-lasting wisdom which is flowing from India and therefore it is called the land of light or knowledge. Bharata means a place where people seek knowledge (or light) and many many people have devoted their life in pursuit of knowledge. This application is an attempt to give a brief description to the various such personalities and the concepts of certain words which are synonous with the Indian Heritage and Culture.
+There is an ever-lasting wisdom which is flowing from India and therefore it is called the land of light or knowledge. Bharata means a place where people seek knowledge (or light) and many such individuals have devoted their lives in pursuit of knowledge. This application is an attempt to give a brief description to the various such personalities and the commonly used terms in Indian Philiosophy that are part of the rich Indian Heritage.
 
 <!-- ## Demo
 
@@ -10,7 +10,7 @@ See it online: https://aamrits.github.io/ -->
 
 Most of the codebase is built with the simple approach of "typing in google and do the monkey-see-monkey-do" kind of programming. 
 
-My main focus was to build a good collection of accurate content and not to perfect the code quality. I focused on unique and good content so that it will provide some value to the readers. 
+My main focus was to build a good collection of relatively accurate content and not to perfect the code quality. Hopefully, it will provide some value to the readers. 
 
 However, modern coding standards has been followed by taking inputs from chatGPT and other documentions.
 
