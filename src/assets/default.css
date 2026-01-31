@@ -6,10 +6,11 @@
     --color-deep-orange: #f1954a;
     --color-purple: #403a5b;
     --color-teal: #5eead4;
+    --color-light-green: #CBF6F7;
     --color-gray: #334155;
     --color-black: #0f172a;
     --color-deep-black: #020617;
-    --color-shadow-gray: rgba(0, 0, 0, 0.1);
+    --color-shadow-gray: rgba(0, 0, 0, 0.05);
     --color-shadow-deep-gray: rgba(0, 0, 0, 0.3);
     --color-highlight-orange: #fde68a;
     --color-highlight-deep-orange: rgba(241, 149, 74, 0.3);

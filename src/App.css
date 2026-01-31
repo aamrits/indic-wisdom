@@ -1,10 +1,11 @@
 @import url('./assets/default.css');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Syne+Mono&display=swap');
 
 #root {
   width: 100%;
   max-width: 1280px;
   padding: 1.5rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   text-align: center;
 }
 
@@ -18,7 +19,7 @@
 
   --bg-white: var(--color-white);
   --bg-black: var(--color-black);
-  --text-white: var(--color-off-white);
+  --text-white: var(--color-white);
   --text-black: var(--color-black);
 
   --border-color: var(--color-off-white);
@@ -35,7 +36,7 @@
 
   --bg-white: var(--color-white);
   --bg-black: var(--color-deep-black);
-  --text-white: var(--color-off-white);
+  --text-white: var(--color-white);
   --text-black: var(--color-black);
 
   --border-color: var(--color-gray);
@@ -48,6 +49,9 @@ body {
   display: flex;
   place-items: center;
   align-items: flex-start;  /* top on mobile */
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
   min-width: 320px;
   min-height: 100vh;
   color: var(--text-color);
@@ -55,7 +59,7 @@ body {
 }
 
 :root[data-theme="light"] body {
-  background-color: var(--primary-white);
+  background-color: var(--color-light-green);
 }
 
 :root[data-theme="dark"] body {
@@ -84,7 +88,7 @@ button {
   border-radius: 999px;
   border: 1px solid var(--border-color);
   padding: 0.6em 1em;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;

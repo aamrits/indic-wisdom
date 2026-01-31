@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Syne+Mono&display=swap');
+
 /* ---------- THEME TOKENS ---------- */
 
 :root[data-theme="light"] {
+    --bg-color: var(--color-white);
     --heading-color: var(--text-black);
     --em-strong-color: var(--secondary-orange);
     --table-bg: var(--bg-white);
@@ -19,6 +22,7 @@
 }
 
 :root[data-theme="dark"] {
+    --bg-color: var(--primary-black);
     --heading-color: var(--text-white);
     --em-strong-color: var(--accent-teal);
     --table-bg: var(--bg-black);
@@ -43,8 +47,12 @@
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.01em;
+    background: var(--bg-color);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 5px 15px 0px var(--color-shadow-gray);
 }
 
 /* ---------- Headings ---------- */
@@ -56,10 +64,9 @@
 }
 
 .markdown-content h1 {
-    color: var(--heading-color);
-}
-
-.markdown-content h1 {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2.6rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -90,15 +97,15 @@
     color: var(--text-color);
 }
 
-.markdown-content em,
-.markdown-content strong {
-    color: var(--em-strong-color);
+.markdown-content em {
+    background-color: var(--color-light-green);
     font-style: normal;
+    font-weight: 500;
 }
 
-.markdown-content strong {
-    font-weight: 500;
-    text-decoration: underline;
+:root[data-theme="dark"] .markdown-content em  {
+  color: var(--color-teal);
+  background-color: transparent;
 }
 
 /* ---------- Horizontal rule ---------- */
@@ -115,10 +122,8 @@
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-    font-size: 1rem;
     background: var(--table-bg);
     border: 1px solid var(--border-color);
-    box-shadow: 0px 5px 15px 0px var(--color-shadow-gray);
 }
 
 .markdown-content th,
@@ -131,7 +136,7 @@
 }
 
 .markdown-content table thead {
-    background-color: var(--color-shadow-gray);
+    background-color: var(--color-shadow-deep-gray);
 }
 
 .markdown-content th {
@@ -163,11 +168,10 @@
     font-style: normal;
     color: var(--text-color);
     border-left: 4px solid var(--blockquote-border);
-    box-shadow: 0px 5px 15px 0px var(--color-shadow-gray);
+    box-shadow: 0px -5px 15px 15px var(--color-shadow-gray);
 }
 
 .markdown-content blockquote em {
-    color: var(--em-strong-color);
     font-style: normal;
     font-weight: 500;
 }
@@ -213,7 +217,6 @@
 
 .markdown-content [lang="sa"],
 .markdown-content [lang="iast"] {
-    font-size: 1em;
     letter-spacing: 0.02em;
     padding: 0.15em 0.4em;
     border-radius: 8px;
@@ -221,22 +224,23 @@
 }
 
 .markdown-content [lang="sa"] {
-    font-family: "Noto Serif Devanagari", serif;
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: var(--sa-bg);
     color: var(--sa-color);
 }
 
 .markdown-content [lang="iast"] {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     background-color: var(--iast-bg);
     color: var(--iast-color);
+    font-size: 0.9em;
 }
 
 /* Sanskrit verses inside blockquotes */
 
 .markdown-content blockquote [lang="sa"] {
     display: block;
-    font-size: 1rem;
     margin-bottom: 0.6rem;
     background: none;
     padding: 0 0.5rem;
@@ -251,8 +255,8 @@
     margin: 0 0.5rem 1.5rem;
     border-radius: 8px;
     display: inline-block;
-    background-color: var(--pill-bg);
-    color: var(--pill-color);
+    background-color: var(--color-teal);
+    color: var(--color-black);
 }
 
 .markdown-content [pill="tag"]:first-child {

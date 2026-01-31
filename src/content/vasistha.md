@@ -1,9 +1,9 @@
-# Sage Vasiṣṭha
+# Sage Vasistha
 
-Pronunciation: **Va-sish-tha**  
-Meaning: **most excellent**
+Pronunciation: *Va-sish-tha*  
+Meaning: *most excellent* 
 
-Sage **Vasistha** is one of the foremost Rishis of the Vedic tradition. He is referred as one of the saptarishis (seven sages). He is the mentals son of *Brahma*. 
+Sage *Vasistha* is one of the foremost Rishis of the Vedic tradition. He is referred as one of the saptarishis (seven sages). He is the mentals son of *Brahma*. 
 
 His presence across Itihāsa and philosophical literature is vast. He is the most respected sage and is a brahmarshi (someone who has realized *brahman*) or a self-realized person.
 
