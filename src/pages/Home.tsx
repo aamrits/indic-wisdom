@@ -10,7 +10,7 @@ import { slugify, normalizeWord } from "../utils";
 // `;
 
 const text = `
-Paramparā, Vasiṣṭha, Bhīṣma
+Paramparā, Vasiṣṭha, Bhīṣma, Draupadī
 `;
 
 type Props = {

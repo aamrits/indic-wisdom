@@ -188,6 +188,10 @@ button:focus-visible {
     right: 15px;
     z-index: 99;
   }
+
+  .markdown-content table {
+    word-break: break-all;
+  }
 }
 
 /* Desktop */

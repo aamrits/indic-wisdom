@@ -98,14 +98,18 @@
 }
 
 .markdown-content em {
-    background-color: var(--color-light-green);
+    background: linear-gradient(
+        to bottom left,
+        transparent 25%,
+        var(--color-teal) 75%
+    );
     font-style: normal;
     font-weight: 500;
 }
 
 :root[data-theme="dark"] .markdown-content em  {
   color: var(--color-teal);
-  background-color: transparent;
+  background: transparent;
 }
 
 /* ---------- Horizontal rule ---------- */
