@@ -3,7 +3,7 @@
 Name: *Bhīṣma*  
 Pronunciation: *Bhish-ma*  
 Meaning: *the terrible one*  
-Category: *Kuru Elder / Mahabharata Figure*  
+Title: *Kuru Elder / Mahabharata Figure*  
 
 Bhisma is one of the most powerful figures in the *Mahabharata*. He was the great-grandfather of the *Pandavas* and *Kauravas*.
 
@@ -13,7 +13,7 @@ In the Mahabharata war, he fought for nine days as the general of the Kaurava ar
 
 ## Birth and Lineage
 
-He is the son of *Santanu* and *Ganga*. Santanu was the great king of the Lunar dynasty. He married Ganga, and they had eight children. Those children were actually the *Vasus* who were born on Earth due to a curse from Sage Vasistha. To liberate them from human lives, Ganga threw the first seven to the river, but while she was about to throw the eighth child, Santanu stopped her. 
+He is the son of *Santanu* and *Ganga*. Santanu was the great king of the Lunar dynasty. He married Ganga, and they had eight children. Those children were actually the *Vasus* who were born on Earth due to a curse from *Sage Vasistha*. To liberate them from human lives, Ganga threw the first seven to the river, but while she was about to throw the eighth child, Santanu stopped her. 
 
 Ganga didn’t drown the child and took him with her. He was taught by the great *Parashurama* and was known by the name of Devabrata. Later, Ganga handed Devabrata to Santanu. The child served his father and quickly became popular in *Hastinapur*. 
 
