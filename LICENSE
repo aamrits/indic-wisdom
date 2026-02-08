@@ -1,36 +1,56 @@
-Copyright (c) 2026 Amrit Anand Gandhi. All Rights Reserved.
+Copyright (c) 2026 Amrit Anand Gandhi
+All Rights Reserved.
 
-PROPRIETARY LICENSE
+INDIC WISDOM PROPRIETARY LICENSE
 
-This software and associated documentation files (the "Software") are the
-proprietary property of Amrit Anand Gandhi.
+1. DEFINITIONS
 
-PERMISSIONS:
-- You MAY view and read the source code for personal educational purposes only.
-- You MAY reference the code structure for learning.
+“Software” means the source code, configuration files, scripts, and all associated documentation contained in this repository.
 
-RESTRICTIONS:
-- You MAY NOT copy, reproduce, or duplicate the Software or any portion thereof.
-- You MAY NOT modify, adapt, or create derivative works based on the Software.
-- You MAY NOT distribute, publish, or share the Software in any form.
-- You MAY NOT use the Software or any portion thereof for commercial purposes.
-- You MAY NOT use the Software to create competing products or services.
-- You MAY NOT sublicense, sell, rent, lease, or lend the Software.
-- You MAY NOT remove or alter any proprietary notices or labels on the Software.
+“Data Files” means all JSON, text, markdown, database, and structured content files containing curated spiritual, scriptural, linguistic, or original written material.
 
-DATA FILES:
-The content data files contain original, curated content that is strictly
-proprietary. Any use, reproduction, or distribution of this content is
-expressly prohibited.
+2. OWNERSHIP
 
-DISCLAIMER:
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR
-OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+The Software and Data Files are the exclusive intellectual property of Amrit Anand Gandhi and are protected under applicable copyright laws.
 
-ENFORCEMENT:
-Any unauthorised use, reproduction, or distribution of this Software may
-result in severe civil and criminal penalties, and will be prosecuted to
-the maximum extent possible under law.
+3. PERMITTED USE
 
-For licensing inquiries, contact: amritanand888@gmail.com
+You are granted a limited, non-exclusive, non-transferable, revocable license to:
+
+- View and access the source code solely for personal, non-commercial educational purposes.
+- Study the code structure for learning purposes.
+
+No other rights are granted.
+
+4. RESTRICTIONS
+
+You may NOT:
+
+- Copy, reproduce, or redistribute the Software or Data Files.
+- Modify or create derivative works from the Software or Data Files.
+- Use the Software or Data Files for commercial purposes.
+- Extract, republish, or reuse any portion of the Data Files.
+- Create competing products or services based on the Software or Data Files.
+- Remove or alter copyright notices.
+
+5. DATA FILES PROTECTION
+
+All Data Files contain original curated intellectual content.
+No portion of these files may be copied, extracted, reformatted, or redistributed in any medium without explicit written permission from the author.
+
+6. DISCLAIMER
+
+THE SOFTWARE AND DATA FILES ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+7. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM OR DAMAGES ARISING FROM THE USE OF THE SOFTWARE OR DATA FILES.
+
+8. GOVERNING LAW
+
+This License shall be governed by and construed in accordance with the laws of India.
+
+9. CONTACT
+
+For licensing inquiries:
+amritanand888@gmail.com
