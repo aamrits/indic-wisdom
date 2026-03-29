@@ -10,7 +10,7 @@ import { slugify, normalizeWord } from "../utils";
 // `;
 
 const text = `
-Vasiṣṭha, Viśvāmitra, Bhīṣma, Draupadī, Yudhiṣṭhira, Bhīma, Arjuna, Śaṅkarācārya
+Vasiṣṭha, Viśvāmitra, Bhīṣma, Draupadī, Yudhiṣṭhira, Bhīma, Arjuna, Śaṅkarācārya, Purānas,
 `;
 
 type Props = {
